@@ -170,7 +170,7 @@ contract ERC20 {
 }
 
 /**
- * Admin of contract, who can set he price of token and retrive Ether
+ * Admin of contract, who can set he price of token and retrieve Ether
  */
 contract owned {
 
@@ -283,9 +283,9 @@ contract CoinCC is owned, ERC20 {
     }
 
     /**
-     * retrive all Ether from contract address to admin address
+     * retrieve all Ether from contract address to admin address
      */
-    function retriveAllEther() public onlyAdmin {
+    function retrieveAllEther() public onlyAdmin {
         // get balance of contract
         uint256 amount = address(this).balance;
 
